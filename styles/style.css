@@ -135,3 +135,99 @@ nav > .primarybtn {
   color: var(--black);
   font-size: clamp(0.9rem, calc(1vw + 0.4rem), 1.25rem);
 }
+
+
+/* main > curriculum section*/
+.curriculum {
+    background: url("assets/bg.png");
+    margin: 60px auto;
+  }
+  .curriculum > h3,.stories > h3 {
+    font-size: clamp(1.625rem, calc(2.083vw + 1rem), 2.9rem);
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+  }
+  .curriculum-cards {
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 29px;
+    row-gap: 13px;
+  }
+  .curri-img > img {
+    width: 136.76px;
+  }
+  .curri-card {
+    width: 368px;
+    height: 477px;
+    border: 1px solid #def5ff;
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28px 1px rgba(0, 0, 0, 0.05);
+  }
+  .curri-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    height: 40%;
+  }
+  .curri-one {
+    background: linear-gradient(#def5ff, #ffffff00);
+  }
+  .curri-two {
+    background: linear-gradient(#fff4dc, #ffffff00);
+  }
+  .curri-three {
+    background: linear-gradient(#eee1ff, #ffffff00);
+  }
+  .curri-txt {
+    background-color: #ffffff30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 33px;
+    height: 60%;
+    text-align: center;
+    padding: 40px;
+  }
+  .curri-txt > h5 {
+    font-size: clamp(1.03rem, calc(0.7vw + 1rem), 1.5rem);
+    font-weight: bold;
+  }
+  .curri-card:nth-child(1) > .curri-txt > button {
+    border: none;
+    background-color: transparent;
+    color: #64c8ff;
+  }
+  .curri-card:nth-child(2) > .curri-txt > button {
+    border: none;
+    background-color: transparent;
+    color: #F0AA00;
+  }
+  .curri-card:nth-child(3) > .curri-txt > button {
+    border: none;
+    background-color: transparent;
+    color: #8700FF;
+  }
+  .direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .direction > i {
+    font-size: 24px;
+    line-height: 1;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--orange);
+    border-radius: 50%;
+  }
