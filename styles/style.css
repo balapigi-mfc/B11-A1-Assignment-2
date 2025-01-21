@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,500;1,500&display=swap");
+
+/* Reset margin paddin */
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,
+.stories {
+  max-width: 1440px;
+  font-family: "Quicksand", serif;
+  margin: 0px auto;
+}
+
+
+
+
+/* header > navigation */
+header {
+  padding: clamp(12px, calc(1.3vw + 1px), 22px)
+    clamp(16px, calc(9.7vw + 1px), 140px);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  column-gap: 32px;
+}
+nav > ul > li {
+  font-size: clamp(1rem, calc(1.3vw + 1px), 1.2rem);
+  font-weight: bold;
+}
+nav > ul > li:nth-child(1) {
+  color: var(--orange);
+}
+nav > ul > li:nth-child(2) {
+  color: var(--sky-blue);
+}
+nav > ul > li:nth-child(3) {
+  color: var(--05D4DF);
+}
+nav > ul > li:nth-child(4) {
+  color: var(--5D58EF);
+}
+nav > .primarybtn {
+  padding: 10px 60px;
+  background-color: var(--orange);
+}
+.title,.cover{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.title > h2 {
+  font-size: clamp(1.7rem, calc(2.22vw + 1px), 2.1rem);
+  font-weight: bold;
+  color: var(--black);
+}
+.fa-bars {
+  display: none;
+  font-size: 30px;
+  color: var(--black);
+}
