@@ -15,7 +15,33 @@ body,
   margin: 0px auto;
 }
 
-
+/* Common Pattern */
+:root {
+    --white: #f7f7f7;
+    --sky-blue: #01acfd;
+    --orange: #fea301;
+    --black: #111111;
+    --05D4DF: #05d4df;
+    --5D58EF: #5d58ef;
+  }
+  
+  .raleway {
+    font-family: "Raleway", serif;
+    font-size: clamp(0.7rem, calc(1vw + 1px), 1rem);
+    font-weight: 500;
+    color: #808080;
+    line-height: 1.6;
+  }
+  .primarybtn {
+    font-family: "Quicksand", serif;
+    color: var(--white);
+    padding: 10px 47px;
+    border: none;
+    font-size: clamp(1rem, calc(1.3vw + 2px), 1.27rem);
+    background-color: var(--black);
+    border-radius: 12px;
+    font-weight: bold;
+  }
 
 
 /* header > navigation */
@@ -70,4 +96,42 @@ nav > .primarybtn {
   display: none;
   font-size: 30px;
   color: var(--black);
+}
+
+/* main > hero section */
+.hero,
+.curriculum,
+.stories {
+  padding: 0px clamp(16px, calc(9.7vw + 1px), 140px);
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-img > img {
+  width: 100%;
+}
+.hero-txt {
+  max-width: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero-txt > h1 {
+  font-size: clamp(2rem, calc(2.7vw + 1rem), 3.5rem);
+  font-weight: bold;
+  color: var(--black);
+}
+.hero-txt > h1 > span:first-child {
+  color: var(--orange);
+}
+.hero-txt > h1 > span:last-child {
+  color: var(--sky-blue);
+}
+.hero-txt > p {
+  color: var(--black);
+  font-size: clamp(0.9rem, calc(1vw + 0.4rem), 1.25rem);
 }
