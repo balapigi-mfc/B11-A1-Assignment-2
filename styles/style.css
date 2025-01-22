@@ -400,6 +400,16 @@ footer > .kid > p{
   gap: 10px;
 }
 
+/* Marquee section */
+Marquee{
+    color: #f5f4f1;
+    font-weight: bold;
+    background-color: #0e0b01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 button, li, i{
   cursor: pointer;
 }
