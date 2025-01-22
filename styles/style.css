@@ -138,7 +138,7 @@ nav > .primarybtn {
 
 /* Curriculum section*/
 .curriculum {
-  background: url("assets/bg.png");
+  background: url("/assets/bg.png");
   margin: 60px auto;
 }
 .curriculum > h3,.stories > h3 {
@@ -234,7 +234,7 @@ nav > .primarybtn {
 /* Stories section */
 
 .stories {
-  background: url("assets/bg.png"),
+    background: url("/assets/bg.png"),
     linear-gradient(360deg, rgba(254, 161, 1, 0.3), #ffffff);
 }
 .cards-box{
@@ -398,4 +398,8 @@ footer > .kid > p{
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+button, li, i{
+  cursor: pointer;
 }
